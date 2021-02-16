@@ -1,0 +1,105 @@
+:root {
+    --blue-logo: rgba(33, 150, 243, 1);
+    --blue-btn: rgba(24, 140, 232, 1);
+
+    --black-logo: rgba(0, 0, 0, 1);
+    --black-text: rgba(33, 33, 33, 1);
+    
+    --greey: rgba(117, 117, 117, 1);
+    --greey-op60: rgba(255, 255, 255, 0.6);
+    
+    --white-text: rgba(255, 255, 255, 1);
+
+    --background-black: rgba(47, 48, 58, 1);
+}
+
+body {font-family: 'Roboto', sans-serif;}
+
+.container { width: 1170px; padding: 0 15px; margin: 0 auto;}
+
+img {display: block; max-width: 100%; height: auto;}
+
+/*шапка*/
+
+.header-nav, .logotip, .ul-list, .ul-li { display: flex;}
+
+.header-nav {justify-content: space-between; align-items: center; padding-top: 26px;}
+
+.ul-list { padding-left: 93px;}
+
+.ul-list li:not(:first-child) {margin-left: 50px;}
+
+.ul-li li:last-child {margin-left: 50px;}
+
+.logotip {text-decoration: none; font-family: Raleway, sans-serif; color: var(--black-logo); font-style: normal; font-size: 26px; font-weight: 700;}
+
+.logo { font-family: 'Oleo Seript', sans-serif; color: var(--blue-logo); font-style: normal; font-size: 26px; font-weight: 400;}
+
+.styd:hover { text-decoration: none; color: var(--blue-logo); font-weight: 500; font-style: normal; font-size: 14px;}
+
+.link:hover {color: var(--blue-logo); font-weight: 500; font-style: normal; font-size: 14px;}
+
+.port {color: var(--black-text); font-weight: 500; font-style: normal; font-size: 14px;}
+
+.tel {color: var(--greey-light);font-weight: 500; font-style: normal; font-size: 14px;}
+
+
+/*мейн*/
+
+.efect {background-color: var(--background-black); margin-left: auto; margin-right: auto;}
+
+.efect-h { color: var(--white-text); font-weight: 900; font-style: normal; font-size: 44px; text-align: center; margin-left: 296px; margin-bottom: 30px;}
+
+.knopka { display: flex; justify-content: center; margin-bottom: 200px;}
+
+.efect-btn {color: var(--white-text); background-color: var(--blue-btn);font-family: 'Roboto', sans-serif ; font-weight: 700; font-style: normal; font-size: 16px;}
+
+
+/*секция текст*/
+
+.text {display: flex; margin-bottom: 94px;}
+
+.text div {justify-content: space-between;}
+
+.div:not(:first-child) {margin-left: 30px;}
+
+.text-h {color: var(--black-text); font-weight: 700; font-style: normal; font-size: 14px; margin-bottom: 10px;}
+
+.text-p {color: var(--greey-light); font-weight: 400; font-style: normal; font-size: 14px;}
+
+/*секция чм занимаемся*/
+
+.text-head {color: var(--black-text); font-weight: 700; font-style: normal; font-size: 36px;}
+
+.foto h2 { margin-left: 412px; margin-bottom: 50px;}
+
+.list-img {display: flex;}
+
+.list-img li:not(:last-child) {margin-right: 30px;}
+
+/*наша команда*/
+
+.class-h {margin-top: 94px; margin-left: 468px;}
+
+.set {display: flex; flex-wrap: wrap; flex-basis: calc(100% / 4); justify-content: space-between;}
+
+.cartochka:not(:first-child) {margin-left: 30px;}
+
+.images {width: 270px; height: 260px;}
+
+.li-cart {color: var(--black-text);font-weight: 500; font-style: normal; font-size: 16px; margin-top: 30px;}
+
+.list {color: var(--greey-light); font-weight: 400; font-style: normal; font-size: 14px; margin-top: 10px;}
+
+
+/*footer*/
+
+footer {background-color: var(--background-black);}
+
+.logofoter {color: var(--white-text);}
+
+.logofoter {margin-top: 60px; margin-bottom: 20px;}
+
+.adres {color: var(--white-text); font-weight: 400; font-size: 14px; margin-bottom: 60px;}
+
+.cont {color: var(--greey-op60); font-weight: 400; font-style: normal; font-size: 14px; margin-top: 9px; margin-bottom: 9px;}
