@@ -11,6 +11,8 @@
     --white-text: rgba(255, 255, 255, 1);
 
     --background-black: rgba(47, 48, 58, 1);
+
+    --border-white-bottom: rgba(236, 236, 236, 1);
 }
 
 body {font-family: 'Roboto', sans-serif;}
@@ -23,7 +25,7 @@ img {display: block; max-width: 100%; height: auto;}
 
 .header-nav, .logotip, .ul-list, .ul-li { display: flex;}
 
-.header-nav {justify-content: space-between; align-items: center; padding-top: 26px;}
+.header-nav {justify-content: space-between; align-items: center; padding-top: 26px; padding-bottom: 23px; border-bottom: 1px var(--border-white-bottom);}
 
 .ul-list { padding-left: 93px;}
 
@@ -46,14 +48,15 @@ img {display: block; max-width: 100%; height: auto;}
 
 /*мейн*/
 
-.efect {background-color: var(--background-black); margin-left: auto; margin-right: auto;}
+.main { height: 600px; background-color: var(--background-black); margin-left: auto; margin-right: auto;}
 
-.efect-h { color: var(--white-text); font-weight: 900; font-style: normal; font-size: 44px; text-align: center; margin-left: 296px; margin-bottom: 30px;}
+.efect-h, .knopka { display: flex; flex-wrap: wrap; text-align: center; justify-content: center;}
 
-.knopka { display: flex; justify-content: center; margin-bottom: 200px;}
+.efect-h {color: var(--white-text); font-weight: 900; font-style: normal; font-size: 44px; margin-bottom: 30px; padding-top: 200px; padding-left: 265px; padding-right: 237px;}
 
-.efect-btn {color: var(--white-text); background-color: var(--blue-btn);font-family: 'Roboto', sans-serif ; font-weight: 700; font-style: normal; font-size: 16px;}
+.knopka {padding-bottom: 200px;}
 
+.efect-btn {color: var(--white-text); background-color: var(--blue-btn);font-family: 'Roboto', sans-serif ; font-weight: 700; font-style: normal; font-size: 16px; text-align: center;}
 
 /*секция текст*/
 
@@ -79,9 +82,11 @@ img {display: block; max-width: 100%; height: auto;}
 
 /*наша команда*/
 
-.class-h {margin-top: 94px; margin-left: 468px;}
+.class-h {padding-top: 94px; text-align: center; padding-bottom: 50px;}
 
-.set {display: flex; flex-wrap: wrap; flex-basis: calc(100% / 4); justify-content: space-between;}
+.set {display: flex; flex-wrap: wrap; flex-basis: calc(100% / 4 - 30px); justify-content: space-between;}
+
+.cartochka {margin-left: -30px;}
 
 .cartochka:not(:first-child) {margin-left: 30px;}
 

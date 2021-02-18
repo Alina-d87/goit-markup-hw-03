@@ -11,6 +11,8 @@
     --white-text: rgba(255, 255, 255, 1);
 
     --background-black: rgba(47, 48, 58, 1);
+
+    --border-white-bottom: rgba(236, 236, 236, 1);
 }
 
 body {font-family: 'Roboto', sans-serif;margin: 0; padding: 0;}
@@ -23,7 +25,7 @@ img {display: block; max-width: 100%; height: auto;}
 
 .body-nav, .logotip, .nav-styd, .info {display: flex;}
 
-.body-nav {justify-content: space-between; align-items: center; padding-top: 24px;}
+.body-nav {justify-content: space-between; align-items: center; padding-top: 24px; padding-bottom: 25px; border-bottom: 1px var(--border-white-bottom);}
 
 .nav-styd li:not(:first-child) {margin-left: 50px;}
 
@@ -47,21 +49,17 @@ img {display: block; max-width: 100%; height: auto;}
  
 .block, .btn, .list {display: flex;}
 
-.slot {margin-left: -30px; margin-right: -30px;}
+.btn {justify-content: center; padding-top: 94px; padding-bottom: 50px;}
 
-.btn {justify-content: center;}
-
-.btn li {margin-top: 94px; margin-left: 8px; margin-bottom: 50px;}
+.btn li {margin-left: 8px;}
 
 .btn-vse {color: var(--white-text); background-color: var(--blue-logo); font-family: 'Roboto', sans-serif; font-weight: 500; font-style: normal; font-size: 16px;}
 
 .btn-web { color: var(--black-text); font-family: 'Roboto', sans-serif; font-weight: 500; font-style: normal; font-size: 16px;}
 
-.list {flex-wrap: wrap; flex-basis: calc(100% / 3 - 30); justify-content: space-between;}
+.list {flex-wrap: wrap; flex-basis: calc(100% / 3); justify-content: space-between;}
 
 images {width: 370px; height: 294px;}
-
-.list {margin: 30px;}
 
 .list-poster {color: var(--black-text); font-weight: 700; font-style: normal; font-size: 18px; margin-top: 20px; margin-bottom: 4px;}
 
