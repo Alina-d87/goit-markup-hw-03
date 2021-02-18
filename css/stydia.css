@@ -23,9 +23,11 @@ img {display: block; max-width: 100%; height: auto;}
 
 /*шапка*/
 
+.header {border-bottom: 1px solid var(--border-white-bottom);}
+
 .header-nav, .logotip, .ul-list, .ul-li { display: flex;}
 
-.header-nav {justify-content: space-between; align-items: center; padding-top: 26px; padding-bottom: 23px; border-bottom: 1px var(--border-white-bottom);}
+.header-nav { justify-content: space-between; align-items: center; padding-top: 26px; padding-bottom: 23px;}
 
 .ul-list { padding-left: 93px;}
 
