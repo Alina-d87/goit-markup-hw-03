@@ -23,9 +23,11 @@ img {display: block; max-width: 100%; height: auto;}
 
 /*шапка*/
 
+.body-head {border-bottom: 1px var(--border-white-bottom);}
+
 .body-nav, .logotip, .nav-styd, .info {display: flex;}
 
-.body-nav {justify-content: space-between; align-items: center; padding-top: 24px; padding-bottom: 25px; border-bottom: 1px var(--border-white-bottom);}
+.body-nav {justify-content: space-between; align-items: center; padding-top: 24px; padding-bottom: 25px;}
 
 .nav-styd li:not(:first-child) {margin-left: 50px;}
 
