@@ -13,6 +13,12 @@
     --background-black: rgba(47, 48, 58, 1);
 
     --border-white-bottom: rgba(236, 236, 236, 1);
+
+    --background-komanda: #F5F4FA;
+
+    --background-cart: #FFFFFF;
+
+    --border-cart: #EEEEEE;
 }
 
 body {font-family: 'Roboto', sans-serif;margin: 0; padding: 0;}
@@ -23,8 +29,8 @@ img {display: block; max-width: 100%; height: auto;}
 
 /*шапка*/
 
-.body-head {border-bottom: 1px var(--border-white-bottom);}
-
+.body-head { width: 100%; border-bottom: 1px var(--border-white-bottom);}
+ 
 .body-nav, .logotip, .nav-styd, .info {display: flex;}
 
 .body-nav {justify-content: space-between; align-items: center; padding-top: 24px; padding-bottom: 25px;}
@@ -33,15 +39,15 @@ img {display: block; max-width: 100%; height: auto;}
 
 .info li:last-child {margin-left: 50px;}
 
-.logotip { text-decoration: none; font-family: 'Raleway', sans-serif; color: var(--black-logo); font-weight: 700; font-style: normal; font-size: 26px;}
+.logotip { text-decoration: none; font-family: 'Raleway', sans-serif; color: var(--black-logo); font-weight: 700; font-style: normal; font-size: 26px; line-height: 31px;}
 
-.logo { font-family: 'Oleo Seript', sans-serif; color: var(--blue-logo);font-weight: 400; font-style: normal; font-size: 26px;}
+.logo { font-family: 'Oleo Seript', sans-serif; color: var(--blue-logo);font-weight: 400; font-style: normal; font-size: 26px; line-height: 31px;}
 
-.nav-styd {color: var(--black-text); text-decoration: none; font-weight: 500; font-style: normal; font-size: 14px;}
+.nav-styd {color: var(--black-text); text-decoration: none; font-weight: 500; font-style: normal; font-size: 14px; line-height: 16px;}
 
 .styd-li:hover {color: var(--blue-logo);}
 
-.info { text-decoration: none;  color: var(--greey); font-weight: 500; font-style: normal; font-size: 14px;}
+.info { text-decoration: none;  color: var(--greey); font-weight: 500; font-style: normal; font-size: 14px; line-height: 16px;}
 
 .stydia {color: var(--black-text);}
 
@@ -51,21 +57,36 @@ img {display: block; max-width: 100%; height: auto;}
  
 .block, .btn, .list {display: flex;}
 
-.btn {justify-content: center; padding-top: 94px; padding-bottom: 50px;}
+.block { padding-top: 94px; padding-bottom: 94px;}
+
+.btn { justify-content: center; padding-top: 94px; padding-bottom: 50px;}
 
 .btn li {margin-left: 8px;}
 
-.btn-vse {color: var(--white-text); background-color: var(--blue-logo); font-family: 'Roboto', sans-serif; font-weight: 500; font-style: normal; font-size: 16px;}
+.btn-vse {color: var(--white-text); background-color: var(--blue-logo); font-family: 'Roboto', sans-serif; font-weight: 500; font-style: normal; font-size: 16px; line-height: 24px; text-align: center; width: 73px; height: 38px; border-radius: 4px; box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
 
-.btn-web { color: var(--black-text); font-family: 'Roboto', sans-serif; font-weight: 500; font-style: normal; font-size: 16px;}
 
-.list { flex-wrap: wrap; flex-basis: calc(100% / 3); justify-content: space-between;}
+.btn-web { color: var(--black-text); font-family: 'Roboto', sans-serif; font-weight: 500; font-style: normal; font-size: 16px; line-height: 26px; text-align: center; height: 38px; background-color: var(--background-komanda); border-radius: 4px;}
+
+.veb {width: 128px;}
+
+.aplication {width: 145px;}
+
+.dezine {width: 103px;}
+
+.market {width: 130px;}
+
+.list { flex-wrap: wrap; flex-basis: calc(100% / 3 - 30px); justify-content: space-between;}
 
 images { width: 370px; height: 294px;}
 
-.list-poster {color: var(--black-text); font-weight: 700; font-style: normal; font-size: 18px; margin-top: 20px; margin-bottom: 4px;}
+.cart { width: 370px; background-color: var(--background-cart); margin-bottom: 30px; padding-bottom: 20px;}
 
-.list-web {color: var(--greey); font-weight: 400; font-style: normal; font-size: 16px;}
+.border {border-right: 1px solid var(--border-cart); border-bottom: 1px solid var(--border-cart); border-left: 1px solid var(--border-cart); box-sizing: border-box;}
+
+.list-poster {color: var(--black-text); font-weight: 700; font-style: normal; font-size: 18px; line-height: 36px; margin-bottom: 4px; padding-left: 24px;}
+
+.list-web {color: var(--greey); font-weight: 400; font-style: normal; font-size: 16px; line-height: 30px; padding-left: 24px; padding-bottom: 20px;}
 
 /*footer v styd css//*/
 
