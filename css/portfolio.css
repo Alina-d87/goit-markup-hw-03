@@ -13,6 +13,7 @@
     --background-black: rgba(47, 48, 58, 1);
 
     --border-white-bottom: rgba(236, 236, 236, 1);
+    --border-head: #ECECEC;
 
     --background-komanda: #F5F4FA;
 
@@ -27,9 +28,11 @@ body {font-family: 'Roboto', sans-serif;margin: 0; padding: 0;}
 
 img {display: block; max-width: 100%; height: auto;}
 
+a {text-decoration: none;}
+
 /*шапка*/
 
-.body-head { width: 100%; border-bottom: 1px var(--border-white-bottom);}
+.body-head { width: 100%; border-bottom: 1px  solid var(--border-head);}
  
 .body-nav, .logotip, .nav-styd, .info {display: flex;}
 
@@ -43,13 +46,19 @@ img {display: block; max-width: 100%; height: auto;}
 
 .logo { font-family: 'Oleo Seript', sans-serif; color: var(--blue-logo);font-weight: 400; font-style: normal; font-size: 26px; line-height: 31px;}
 
-.nav-styd {color: var(--black-text); text-decoration: none; font-weight: 500; font-style: normal; font-size: 14px; line-height: 16px;}
+.nav-styd { font-weight: 500; font-style: normal; font-size: 14px; line-height: 16px;}
 
-.styd-li:hover {color: var(--blue-logo);}
+.st {color: var(--black-text); text-decoration: none;}
 
-.info { text-decoration: none;  color: var(--greey); font-weight: 500; font-style: normal; font-size: 14px; line-height: 16px;}
+.li-p { text-decoration: none; color: var(--blue-logo);}
 
-.stydia {color: var(--black-text);}
+.styd-li:hover:focus {color: var(--blue-logo);}
+
+.info { font-weight: 500; font-style: normal; font-size: 14px; line-height: 16px;}
+
+.mail, .tel-p { text-decoration: none;  color: var(--greey);}
+
+/*.stydia {color: var(--black-text);}*/
 
 /*слот*/
 

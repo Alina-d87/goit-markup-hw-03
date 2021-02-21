@@ -15,10 +15,12 @@
     --border-white-bottom: rgba(236, 236, 236, 1);
 
     --background-head: #2F303A;
+    --border-head: #ECECEC;
 
     --background-btn: #2196F3;
 
     --background-komanda: #F5F4FA;
+    --background-cart: #FFFFFF;
 
 }
 
@@ -30,7 +32,7 @@ img {display: block; max-width: 100%; height: auto;}
 
 /*шапка*/
 
-.header { width: 100%; border-bottom: 1px solid var(--border-white-bottom);}
+.header { width: 100%; border-bottom: 1px solid var(--border-head);}
 
 .header-nav, .logotip, .ul-list, .ul-li { display: flex;}
 
@@ -63,9 +65,9 @@ img {display: block; max-width: 100%; height: auto;}
 
 .efect-h {color: var(--white-text); font-weight: 900; font-style: normal; font-size: 44px; text-transform: uppercase; line-height: 60px; margin-bottom: 34px; padding-top: 200px; padding-left: 252px; padding-right: 252px;}
 
-.knopka:hover:focus {padding-bottom: 200px; width: 200px; height: 50px; box-shadow: 0px 4px 4px 0px rgba (0, 0, 0, 0.15); border-radius: 4px;}
+.knopka:hover:focus { box-shadow: 0px 4px 4px 0px rgba (0, 0, 0, 0.15);}
 
-.efect-btn {color: var(--white-text); background-color: var(--background-btn);font-family: 'Roboto', sans-serif ; font-weight: 700; font-style: normal; font-size: 16px; line-height: 30px; text-align: center; padding: 10px 32px;}
+.efect-btn {color: var(--white-text); background-color: var(--background-btn);font-family: 'Roboto', sans-serif ; font-weight: 700; font-style: normal; font-size: 16px; line-height: 30px; text-align: center; padding: 10px 32px; width: 200px; height: 50px; border-radius: 4px;}
 
 /*секция текст*/
 
@@ -103,16 +105,18 @@ img {display: block; max-width: 100%; height: auto;}
 
 .images { width: 270px; height: 260px;}
 
-.li-cart {color: var(--black-text);font-weight: 500; font-style: normal; font-size: 16px; margin-top: 30px; text-align: center;}
+.li-cart {color: var(--black-text);font-weight: 500; font-style: normal; font-size: 16px; line-height: 19px; padding-top: 30px; text-align: center;}
 
-.list {color: var(--greey-light); font-weight: 400; font-style: normal; font-size: 14px; margin-top: 10px; padding-bottom: 30px; text-align: center;}
+.list {color: var(--greey-light); font-weight: 400; font-style: normal; font-size: 14px; line-height: 19px; margin-top: 10px; padding-bottom: 30px; text-align: center;}
+
+.content { background-color: var(--background-cart);}
 
 
 /*footer*/
 
 footer {height: 252px; background-color: var(--background-head);}
 
-.logofoter { line-height: 31px; padding-top: 60px; color: var(--white-text); margin-top: 60px; margin-bottom: 20px;}
+.logofoter { line-height: 31px; padding-top: 60px; color: var(--white-text); margin-bottom: 20px;}
 
 .adres { color: var(--white-text); font-weight: 400; font-size: 14px; line-height: 24px; padding-bottom: 60px;}
 
